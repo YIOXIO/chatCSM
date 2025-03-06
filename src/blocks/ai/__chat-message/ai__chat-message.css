@@ -1,0 +1,15 @@
+.ai__chat-message{
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    font-style: normal;
+    font-variation-settings: "wght" 400;
+    letter-spacing: .28px;
+    margin-block-end: .657vw;
+    overflow-wrap: anywhere;
+}
+
+.ai__chat-message > p{
+    font-size: 1.2vw;
+    line-height: 128.571%;
+
+}

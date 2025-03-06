@@ -1,0 +1,16 @@
+.ai__badge{
+    background-color: rgba(17, 32, 84, .68);
+    border: .119vw solid rgba(33, 122, 255, .4);
+    color: #fff;
+    font-family: Oswald;
+    font-size: 1.376vw;
+    font-style: normal;
+    font-variation-settings: "wght" 600;
+    letter-spacing: .026vw;
+    line-height: 111.629%;
+    margin-block-end: 0.7vw;
+    padding-block: 0.9vw;
+    padding-inline: .713vw;
+    text-align: center;
+    text-transform: uppercase;
+}

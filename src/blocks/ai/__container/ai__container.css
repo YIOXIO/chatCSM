@@ -1,0 +1,11 @@
+.ai__container{
+    flex: 33.3% 1 1;
+}
+.ai__container:nth-child(2){
+    display: flex;
+    flex: inherit;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.891vw;
+    justify-content: flex-end;
+}

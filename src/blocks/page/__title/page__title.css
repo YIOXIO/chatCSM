@@ -1,0 +1,12 @@
+.page__title{
+    color: #FFF;
+    text-align: center;
+    font-size: 2.078vw;
+    font-style: normal;
+    font-variation-settings: 'wght' 700;
+    line-height: 118.5%; 
+    letter-spacing: -0.702px;
+    text-transform: uppercase;
+    margin-block-end: 6vh;
+    margin-block-start: 4vh;
+}

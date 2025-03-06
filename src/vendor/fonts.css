@@ -1,0 +1,29 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Inter-Variable';
+    src:
+      local('Inter-Variable'),
+      url('./fonts/Inter-Variable/Inter-Variable.woff2') format('woff2 supports variations'),
+          url('./fonts/Inter-Variable/Inter-Variable.woff2') format('woff2-variations');
+    font-weight: 400 785;
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Oswald';
+    src:
+      local('Oswald-VariableFont_wght'),
+      url('./fonts/Oswald/Oswald-VariableFont_wght.ttf') format('truetype supports variations'),
+          url('./fonts/Oswald/Oswald-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 200 700;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Jost';
+    src:
+      local('Jost-VariableFont_wght'),
+      url('./fonts/Jost/Jost-VariableFont_wght.ttf') format('truetype supports variations'),
+          url('./fonts/Jost/Jost-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 200 700;
+}
+

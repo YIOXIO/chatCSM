@@ -1,0 +1,7 @@
+.ai-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: 3.6vw;
+    gap: 1.3vw;
+    
+}

@@ -1,0 +1,15 @@
+@import './__badge/ai__badge.css';
+@import './__badge-logo/ai__badge-logo.css';
+@import './__badge-logo/_mbe/ai__badge-logo_mbe.css';
+@import './__container/ai__container.css';
+@import './__badge-wrapper/ai__badge-wrapper.css';
+@import './__button/ai__button.css';
+
+/* CHAT */
+@import './__chat-window/ai__chat-window.css';
+@import './__chat-message/ai__chat-message.css';
+@import './__chat-message/_user/ai__chat-message_user.css';
+@import './__chat-message/_ai/ai__chat-message_ai.css';
+@import './__chat-input/ai__chat-input.css';
+@import './__chat-button/ai__chat-button.css';
+@import './__chat-messages/ai__chat-messages.css';

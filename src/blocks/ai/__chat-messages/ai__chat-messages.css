@@ -1,0 +1,16 @@
+.ai__chat-messages{
+    overflow-y: scroll;
+    padding-block: 2.128vw 3.5vw;
+    padding-inline: 1.537vw;
+    position: absolute;
+    inline-size: 100%;
+}
+
+.ai__chat-messages::-webkit-scrollbar-track{
+    width: 10px;
+    background-color: red;
+}
+
+.ai__chat-messages::-webkit-scrollbar {
+    display: none   ;
+  }

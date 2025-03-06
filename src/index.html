@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чат с ИИ</title>
+</head>
+
+<body class="root">
+    <main class="page">
+        <h1 class="page__title">Интеллектуальная система анализа знаний университета (Прототип)</h1>
+        <section class="ai">
+            <div class="ai-wrapper">
+                <article class="ai__container">
+                    <p class="ai__badge">Закрытый контур</p>
+                    <article class="ai__badge-logo ai__badge-logo_mbe">
+                        <img src="<%=require('./svg/logo/deepseek.svg')%>" class="ai-logo"></img>
+                    </article>
+
+                    <div class="ai__chat-window">
+                        <article class="ai__chat-messages">
+                            <article class="ai__chat-message ai__chat-message_user">
+                                <p></p>
+                            </article>
+                            <article class="ai__chat-message ai__chat-message_ai">
+                                <p>Чем могу помочь вам сегодня?</p>
+                            </article>
+                            <div class="ai__typing-loader" style="display: none;">
+                                <span>Бот печатает</span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </article>
+
+                    </div>
+                    <div class="ai__chat-input-wrapper">
+                        <textarea class="ai__chat-input" placeholder="Введите ваше сообщение..."></textarea>
+                        <button class="ai__chat-button">Отправить</button>
+                    </div>
+                </article>
+
+
+                <article style="visibility: hidden;" class="ai__container">
+                    <button class="ai__button">Передать запрос <br> в открытый контур</button>
+                    <button class="ai__button">Передать запрос <br> в закрытый контур</button>
+                </article>
+
+
+                <article style="visibility: hidden;" class="ai__container">
+                    <p class="ai__badge">Открытый контур</p>
+                    <div class="ai__badge-wrapper">
+                        <article class="ai__badge-logo">
+                            <img src="<%=require('./svg/logo/deepseek.svg')%>" class="ai-logo"></img>
+                        </article>
+                        <article class="ai__badge-logo">
+                            <img src="<%=require('./svg/logo/chatGPT.svg')%>" class="ai-logo"></img>
+                        </article>
+                        <article class="ai__badge-logo">
+                            <img src="<%=require('./svg/logo/gigachat.svg')%>" class="ai-logo"></img>
+                        </article>
+                    </div>
+
+                </article>
+            </div>
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>

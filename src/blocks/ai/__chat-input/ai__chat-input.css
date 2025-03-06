@@ -1,0 +1,35 @@
+.ai__chat-input{
+    border-radius: 0.351vw;
+    border: 0.177vw solid rgba(33, 122, 255, 0.40);
+    background: rgba(17, 32, 84, 0.68);
+    inline-size: 100%;
+    padding-inline: 0.946vw;
+    padding-block: 0.691vw 0;
+    margin-block-end: 0.955vw;
+    transition: border-color 0.3s ease;
+    resize: none; 
+    outline: none; 
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.285vw;
+    font-variation-settings: 'wgth' 600;
+
+}
+
+.ai__chat-input::-webkit-scrollbar{
+    display: none;
+}
+
+.ai__chat-input::placeholder{
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.285vw;
+    font-style: normal;
+    font-variation-settings: 'wgth' 600;
+    line-height: 171.429%; /* 171.429% */
+    letter-spacing: -0.326px;
+}
+
+.ai__chat-input:focus{
+    border-color: #007bff;
+}

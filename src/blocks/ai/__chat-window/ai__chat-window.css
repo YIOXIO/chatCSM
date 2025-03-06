@@ -1,0 +1,10 @@
+.ai__chat-window{
+    background-image: url('../../../svg/border-element.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    block-size: 29.897vw;
+    position: relative;
+}

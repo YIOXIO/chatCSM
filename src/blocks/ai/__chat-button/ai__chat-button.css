@@ -1,0 +1,16 @@
+.ai__chat-button{
+    border-radius: 0.236vw;
+    border: 0.118vw solid #174498;
+    background: rgba(17, 32, 84, 0.68);
+    color: #217AFF;
+    text-align: center;
+    font-family: 'Oswald';
+    font-size: 1.3vw;
+    font-style: normal;
+    font-variation-settings:'wght' 600;
+    line-height: 111.629%; /* 111.629% */
+    letter-spacing: 0.22px;
+    padding-block: 0.946vw;
+    padding-inline: 1.418vw;
+    inline-size: 100%;
+}

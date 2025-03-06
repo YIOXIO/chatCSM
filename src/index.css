@@ -1,0 +1,64 @@
+@import './styles/global.css';
+@import './vendor/fonts.css';
+@import './blocks/page/__title/page__title.css';
+
+@import './blocks/ai-wrapper/ai-wrapper.css';
+@import './blocks/ai/ai.css';
+@import './blocks/ai-logo/ai-logo.css';
+
+.root{
+    font-family: 'Oswald', sans-serif;
+    font-variation-settings: 'wght' 500;
+    background-image: url('./img/bg.png');
+    background-color: #112054;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    line-height: normal;
+    min-block-size: 100vh;
+
+}
+
+.root::-webkit-scrollbar{
+    display: none;
+}
+
+
+.ai__typing-loader {
+    color: white;
+    display: flex;
+    gap: 5px;
+    align-items: baseline;
+    gap: 0.33vw;
+    font-size: 1vw;
+    line-height: 128.571%;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #666;
+    border-radius: 50%;
+    animation: typing 1s infinite;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes typing {
+    0% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
