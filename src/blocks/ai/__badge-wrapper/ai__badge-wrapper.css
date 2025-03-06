@@ -8,6 +8,7 @@
 
 .ai__badge-wrapper > .ai__badge-logo{
     flex: 33% 1 1;
+    max-block-size: 4.398vw;
 }
 
 .ai__badge-wrapper> .ai__badge-logo:nth-child(3) > .ai-logo{

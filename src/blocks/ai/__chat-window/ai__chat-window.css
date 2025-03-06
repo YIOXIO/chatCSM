@@ -8,3 +8,9 @@
     block-size: 29.897vw;
     position: relative;
 }
+
+.ai__chat-window_small{
+    background-image: url('../../../svg/border-element-xs.svg');
+    block-size: 24.197vw;
+
+}
