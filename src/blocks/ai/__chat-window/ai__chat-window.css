@@ -2,11 +2,10 @@
     background-image: url('../../../svg/border-element.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
     block-size: 29.897vw;
     position: relative;
+    padding-block: 3vw;
+    overflow: hidden;
 }
 
 .ai__chat-window_small{
