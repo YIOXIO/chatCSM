@@ -2,7 +2,7 @@
   "name": "ai-chat-csm",
   "version": "1.0.0",
   "repository": {
-    "url": ""
+    "url": "git+https://github.com/YIOXIO/chatCSM.git"
   },
   "description": "",
   "main": "index.js",
