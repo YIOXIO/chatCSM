@@ -13,12 +13,11 @@ module.exports = {
         publicPath: ''
     },
 
-    mode: 'development',
+    mode: 'development', // Режим development отключает минификацию по умолчанию
     devServer: {
         static: path.resolve(__dirname, './dist'),
         compress: true,
         port: 8080,
-
         open: true
     },
     module: {
@@ -29,17 +28,32 @@ module.exports = {
                 exclude: '/node_modules'
             },
             {
-                test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf)$/,
-                type: 'asset/resource'
+                // Обработка изображений, шрифтов и других ассетов
+                test: /\.(png|svg|jpg|webp|gif|woff(2)?|eot|ttf|otf|pptx)$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: (pathData) => {
+                        // Разделяем файлы по папкам
+                        if (pathData.filename.includes('.svg')) {
+                            return 'svg/[name][ext]'; // SVG в папку svg
+                        } else if (pathData.filename.match(/\.(woff2?|eot|ttf|otf)$/)) {
+                            return 'fonts/[name][ext]'; // Шрифты в папку fonts
+                        } else {
+                            return 'img/[name][ext]'; // Остальные изображения в папку img
+                        }
+                    }
+                }
             },
             {
                 test: /\.css$/,
-                use: [MiniCssExtractPlugin.loader, {
-                    loader: 'css-loader',
-                    options: {
-                        importLoaders: 1
-                    }
-                },
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            importLoaders: 1
+                        }
+                    },
                     'postcss-loader'
                 ]
             },
@@ -47,11 +61,15 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html'
+            template: './src/index.html',
+            minify: false // Отключаем минификацию HTML
         }),
-
         new CleanWebpackPlugin(),
-        new MiniCssExtractPlugin(),
-    ]
+        new MiniCssExtractPlugin({
+            filename: 'styles.css' // Убираем хеширование в имени CSS-файла
+        }),
+    ],
+    optimization: {
+        minimize: false // Отключаем минификацию JavaScript
+    }
 };
-
