@@ -16,7 +16,7 @@ module.exports = {
     mode: 'development', // Режим development отключает минификацию по умолчанию
     devServer: {
         static: path.resolve(__dirname, './dist'),
-        compress: true,
+        compress: false,
         port: 8080,
         open: true
     },

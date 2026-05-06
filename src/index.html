@@ -8,6 +8,23 @@
 </head>
 
 <body class="root">
+    <aside class="hist-sidebar" id="histSidebar">
+        <div class="hist-sidebar__panel">
+            <div class="hist-sidebar__new-chat-row">
+                <button class="hist-sidebar__new-btn" id="histNewChat">+ Новый чат</button>
+            </div>
+            <div class="hist-sidebar__header">
+                <span class="hist-sidebar__title">История запросов</span>
+                <button class="hist-sidebar__clear" id="histClear" title="Очистить">Очистить</button>
+            </div>
+            <div class="hist-sidebar__list" id="histList">
+                <p class="hist-sidebar__empty">Ваши запросы появятся здесь</p>
+            </div>
+        </div>
+        <button class="hist-sidebar__tab" id="histTab" title="История запросов">
+            <span>История</span>
+        </button>
+    </aside>
     <main class="page">
         <h1 class="page__title">Интеллектуальная система анализа знаний университета (Прототип)</h1>
         <section class="ai">
@@ -24,29 +41,31 @@
                                 <p></p>
                             </article>
                             <article class="ai__chat-message ai__chat-message_ai">
-                                <p>Чем могу помочь вам сегодня?</p>
+                                <div class="ai__chat-message-content">
+                                    <p>Чем могу помочь вам сегодня?</p>
+                                </div>
                             </article>
-                            <div class="ai__typing-loader" style="display: none;">
-                                <span>Бот печатает</span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                            </div>
                         </article>
-
                     </div>
                     <div class="ai__chat-input-wrapper">
+                        <div class="ai__file-preview" style="display:none"></div>
                         <textarea class="ai__chat-input" placeholder="Введите ваше сообщение..."></textarea>
-                        <button class="ai__chat-button">Отправить</button>
+                        <div class="ai__chat-actions">
+                            <label class="ai__file-label" title="Прикрепить файл">
+                                <input type="file" class="ai__file-input"
+                                    accept=".txt,.md,.js,.ts,.py,.json,.csv,.html,.css,.log,.xml,.docx,.xlsx,.xls,.pdf,.pptx">
+                                📎
+                            </label>
+                            <button class="ai__chat-button ai__chat-button_send">Отправить</button>
+                            <button class="ai__chat-button ai__chat-button_stop" style="display:none">⏹ Стоп</button>
+                        </div>
                     </div>
                 </article>
-
 
                 <article class="ai__container">
                     <button class="ai__button">Передать запрос <br> в открытый контур</button>
                     <button class="ai__button">Передать запрос <br> в закрытый контур</button>
                 </article>
-
 
                 <article class="ai__container">
                     <p class="ai__badge">Открытый контур</p>
@@ -67,29 +86,30 @@
                                 <p></p>
                             </article>
                             <article class="ai__chat-message ai__chat-message_ai">
+                                <div class="ai__chat-message-content"></div>
                             </article>
-                            <div class="ai__typing-loader" style="display: none;">
-                                <span>Бот печатает</span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                            </div>
                         </article>
-
                     </div>
                     <div class="ai__chat-input-wrapper">
+                        <div class="ai__file-preview" style="display:none"></div>
                         <textarea class="ai__chat-input" placeholder="Введите ваше сообщение..."></textarea>
-                        <button class="ai__chat-button">Отправить</button>
+                        <div class="ai__chat-actions">
+                            <label class="ai__file-label" title="Прикрепить файл">
+                                <input type="file" class="ai__file-input"
+                                    accept=".txt,.md,.js,.ts,.py,.json,.csv,.html,.css,.log,.xml,.docx,.xlsx,.xls,.pdf,.pptx">
+                                📎
+                            </label>
+                            <button class="ai__chat-button ai__chat-button_send">Отправить</button>
+                            <button class="ai__chat-button ai__chat-button_stop" style="display:none">⏹ Стоп</button>
+                        </div>
                     </div>
                 </article>
             </div>
         </section>
     </main>
-
-
-
-    <script src="/lib/signalr/dist/browser/signalr.js"></script>
-    <script src="/js/VideoWall/MainCommunication.js"></script>
 </body>
+
+</html>
+
 
 </html>
